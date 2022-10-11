@@ -16,11 +16,12 @@ function parsePartCode(partCode) {
   //getting the part of the partCode that is the supplierCode
   let supplierCode = partCode.substring(0, colonPosition);
   let partNumber = partCode.substring(colonPosition + 1, dashPosition);
+  let size = partCode.substring(dashPosition + 1);
 
   let partInformation = {
     supplierCode: supplierCode,
     productNumber: partNumber,
-    size: "some size",
+    size: size,
   };
   return partInformation;
 }
@@ -29,4 +30,3 @@ let partCode1 = "XYZ:1234-L";
 let partInformation = parsePartCode(partCode1);
 console.log(partInformation);
 console.log(generatePartCode(partInformation));
-
