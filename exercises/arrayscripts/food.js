@@ -1,8 +1,4 @@
-let lunch = [
-  { item: "Steak Fajitas", price: 9.95 },
-  { item: "Chips and Guacamole", price: 5.25 },
-  { item: "Sweet Tea", price: 2.79 },
-];
+
 
 function calculateSubtotal(lunch) {
   let subtotal = 0;
@@ -23,5 +19,12 @@ function calculateCheck(lunch, tipPercentage) {
   let total = addTip(subtotal, tipPercentage);
   return total;
 }
+
+
+let lunch = [
+  { item: "Steak Fajitas", price: 9.95 },
+  { item: "Chips and Guacamole", price: 5.25 },
+  { item: "Sweet Tea", price: 2.79 },
+];
 
 console.log(calculateCheck(lunch, 0.22).toFixed(2));
