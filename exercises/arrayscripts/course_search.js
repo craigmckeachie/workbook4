@@ -45,5 +45,10 @@ function getCourse(courses, courseId) {
   }
 }
 
-let course = getCourse(courses, "PROG100");
-console.log(course.StartDate);
+let course1 = getCourse(courses, "PROG200");
+console.log(course1);
+console.log(course1.StartDate);
+
+let course2 = getCourse(courses, "PROJ500");
+console.log(course2);
+console.log(course2.Title);
