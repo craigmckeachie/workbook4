@@ -36,19 +36,42 @@ let courses = [
   },
 ];
 
-function getCourse(courses, courseId) {
-  for (let index = 0; index < courses.length; index++) {
-    const course = courses[index];
-    if (course.CourseId == courseId) {
-      return course;
-    }
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  if (course.CourseId == "PROG200") {
+    console.log("PROG200 has a start date: " + course.StartDate);
   }
 }
 
-let course1 = getCourse(courses, "PROG200");
-console.log(course1);
-console.log(course1.StartDate);
+let cheapCourses = [];
 
-let course2 = getCourse(courses, "PROJ500");
-console.log(course2);
-console.log(course2.Title);
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  if (course.Fee <= 50) {
+    cheapCourses.push(course);
+  }
+}
+
+console.log(cheapCourses);
+
+for (let index = 0; index < cheapCourses.length; index++) {
+  const course = cheapCourses[index];
+  console.log(course.Title);
+}
+
+// function getCourse(courses, courseId) {
+//   for (let index = 0; index < courses.length; index++) {
+//     const course = courses[index];
+//     if (course.CourseId == courseId) {
+//       return course;
+//     }
+//   }
+// }
+
+// let course1 = getCourse(courses, "PROG200");
+// console.log(course1);
+// console.log(course1.StartDate);
+
+// let course2 = getCourse(courses, "PROJ500");
+// console.log(course2);
+// console.log(course2.Title);
