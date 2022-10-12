@@ -36,6 +36,7 @@ let courses = [
   },
 ];
 
+//When does PROG200 Start
 for (let index = 0; index < courses.length; index++) {
   const course = courses[index];
   if (course.CourseId == "PROG200") {
@@ -43,6 +44,8 @@ for (let index = 0; index < courses.length; index++) {
   }
 }
 
+//----------------------------
+//Courses $50 or less
 let cheapCourses = [];
 
 for (let index = 0; index < courses.length; index++) {
@@ -54,9 +57,21 @@ for (let index = 0; index < courses.length; index++) {
 
 console.log(cheapCourses);
 
+console.log("Courses $50 or less");
 for (let index = 0; index < cheapCourses.length; index++) {
   const course = cheapCourses[index];
   console.log(course.Title);
+}
+
+console.log("");
+//Courses in classroom 1
+console.log("Courses in classroom 1");
+
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  if (course.Location == "Classroom 1") {
+    console.log(course.Title);
+  }
 }
 
 // function getCourse(courses, courseId) {
