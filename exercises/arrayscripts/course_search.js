@@ -36,7 +36,7 @@ let courses = [
   },
 ];
 
-//When does PROG200 Start
+// When does PROG200 Start
 for (let index = 0; index < courses.length; index++) {
   const course = courses[index];
   if (course.CourseId == "PROG200") {
