@@ -9,11 +9,14 @@
 </head>
 
 <body>
-    <select name="teamsList" id="teamsList" onchange="handleChange();">
-        <option value="">Select Option</option>
+    <form action="" onsubmit="displayTeam(event);">
+        <select name="teamsList" id="teamsList" onchange="handleChange();">
+            <option value="">Select Option</option>
 
-    </select>
-    <button onclick="displayTeam();">Display Team</button>
+        </select>
+        <button type="submit">Display Team</button>
+    </form>
+
     <p id="message"></p>
     <script src="./main.js"></script>
 </body>

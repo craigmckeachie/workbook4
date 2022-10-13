@@ -26,15 +26,15 @@ function loadTeamsDropdown() {
   }
 }
 
-function displayTeam() {
+function displayTeam(event) {
+  event.preventDefault();
   const teamsList = document.getElementById("teamsList");
   const teamCode = teamsList.value;
   for (let index = 0; index < teams.length; index++) {
     const team = teams[index];
     if (team.code == teamCode) {
-      console.log(
-        `You selected the ${team.name} (${team.code}) who play in ${team.plays}`
-      );
+      const messageParagraph = document.getElementById("message");
+      messageParagraph.innerText = `You selected the ${team.name} (${team.code}) who play in ${team.plays}`;
     }
   }
 }
