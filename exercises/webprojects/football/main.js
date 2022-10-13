@@ -13,7 +13,7 @@ window.onload = function () {
 
 function loadTeamsDropdown() {
   const teamsList = document.getElementById("teamsList");
-  
+
   teams.sort(function (a, b) {
     if (a.name < b.name) return -1;
     else if (a.name == b.name) return 0;
@@ -24,4 +24,21 @@ function loadTeamsDropdown() {
     let option = new Option(team.name, team.code);
     teamsList.appendChild(option);
   }
+}
+
+function displayTeam() {
+  const teamsList = document.getElementById("teamsList");
+  const teamCode = teamsList.value;
+  for (let index = 0; index < teams.length; index++) {
+    const team = teams[index];
+    if (team.code == teamCode) {
+      console.log(
+        `You selected the ${team.name} (${team.code}) who play in ${team.plays}`
+      );
+    }
+  }
+}
+
+function handleChange() {
+  console.log("changed");
 }

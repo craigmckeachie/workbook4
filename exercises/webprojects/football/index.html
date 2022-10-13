@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <select name="teamsList" id="teamsList">
+    <select name="teamsList" id="teamsList" onchange="handleChange();">
         <option value="">Select Option</option>
+
     </select>
-    <button>Choose Team</button>
+    <button onclick="displayTeam();">Display Team</button>
     <p id="message"></p>
     <script src="./main.js"></script>
 </body>
