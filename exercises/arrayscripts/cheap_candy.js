@@ -6,6 +6,22 @@ let products = [
   { product: "Reese's Pieces", price: 6.23 },
 ];
 
+console.log("Candies less than $4.00 using for of loop");
+for (const product of products) {
+  if (product.price < 4.0) {
+    console.log(product);
+  }
+}
+console.log("------------------");
+
+console.log("Candies less than $4.00 using forEach function on array");
+products.forEach(function (product) {
+  if (product.price < 4.0) {
+    console.log(product);
+  }
+});
+console.log("------------------");
+
 console.log("Candies less than $4.00");
 for (let index = 0; index < products.length; index++) {
   const product = products[index];
