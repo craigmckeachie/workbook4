@@ -26,3 +26,15 @@ for (let index = 0; index < products.length; index++) {
   }
 }
 console.log("------------------");
+
+console.log("Do we carry Swedish Fish?");
+for (let index = 0; index < products.length; index++) {
+  const product = products[index];
+
+  //product.product is the name of the product
+  if (product.product.indexOf("Swedish Fish") !== -1) {
+    console.log("We do", product.product);
+    return;
+  }
+}
+console.log("------------------");
