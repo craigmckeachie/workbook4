@@ -6,6 +6,7 @@ let products = [
   { product: "Reese's Pieces", price: 6.23 },
 ];
 
+console.log("Candies less than $4.00");
 for (let index = 0; index < products.length; index++) {
   const product = products[index];
 
@@ -13,3 +14,15 @@ for (let index = 0; index < products.length; index++) {
     console.log(product);
   }
 }
+console.log("------------------");
+
+console.log("M&M Candies");
+for (let index = 0; index < products.length; index++) {
+  const product = products[index];
+
+  //product.product is the name of the product
+  if (product.product.indexOf("M&Ms") !== -1) {
+    console.log(product);
+  }
+}
+console.log("------------------");
