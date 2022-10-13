@@ -51,6 +51,14 @@ function (){
 let person = { first: "Kanye", last: "West", age: 45 };
 ```
 
+### Naming
+
+Should be a noun/thing, it's one instance of a thing.
+
+```
+ let number, course, item, movie, candy, product, animal
+```
+
 ### Accessing Properties (Dot Notation)
 
 ```js
@@ -66,7 +74,17 @@ console.log(person.first);
 let numbers = [1, 2, 3, 4, 5];
 ```
 
-### Access item in Array (Subscript)
+### Naming
+
+Should be plural, it's a collection/list of nouns/things.
+
+```
+ let numbers, courses, items, movies, candies, products, animals
+```
+
+### Access item in Array
+
+- use Subscript, Index into the Array
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -82,5 +100,4 @@ console.log([0]); //1;
 for (let loop = 1; loop < 8; loop++) {
   console.log("I love loops");
 }
-
 ```
