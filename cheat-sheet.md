@@ -114,3 +114,19 @@ for (let loop = 1; loop < 8; loop++) {
 ```js
 // let numbers = [1, 2, 3, 4, 5];
 ```
+
+## Comparison Operators
+
+### Summary
+
+```js
+let a = 1; // one equals is not comparing, it is assigning
+if(a == 1){ //two equals is comparing the values on the left and right
+// returns true if they are equal
+};
+if(a !== 1){ //two equals with a not operator (!) compares the values on the left and right
+//returns true if they are not equal
+
+};
+
+```
