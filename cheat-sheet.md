@@ -101,3 +101,16 @@ for (let loop = 1; loop < 8; loop++) {
   console.log("I love loops");
 }
 ```
+
+## VS Code Shortcuts
+
+### Commenting
+
+- `Ctrl+/` on Windows
+- `CMD+/` on MacOS
+
+- Repeat to uncomment
+
+```js
+// let numbers = [1, 2, 3, 4, 5];
+```
