@@ -75,7 +75,7 @@ console.log([0]); //1;
 
 ## Loops
 
-```
+```js
 //initialize counter
 //check counter using a conditional
 // increment (change) counter
