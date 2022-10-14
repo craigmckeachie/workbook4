@@ -1,4 +1,5 @@
 "use strict";
+let categories = ["drinks","entrees", "desserts"]
 
 let menu = {
   drinks: ["Water", "Tea", "Sweet Tea", "Coke", "Dr. Pepper", "Sprite"],
