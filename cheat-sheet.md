@@ -15,6 +15,12 @@ function myFunction() {}
 myFunction();
 ```
 
+### Naming
+-  Should be a **VERB**
+    - Examples: `find`, `display`, `print`, `load`, `initialize`, `calculate`, `configure`
+- **VERB** *may* be followed by a **NOUN**
+  - Examples: `findCustomer`, `displayCourse`, `printStudent`, `loadProducts`, `initializeDropdown`, `calculateInterest`, `configureApplication`
+
 ### Function with Parameter(s)
 
 ```
@@ -76,11 +82,14 @@ let numbers = [1, 2, 3, 4, 5];
 
 ### Naming
 
-Should be plural, it's a collection/list of nouns/things.
+- Should be a **plural** **NOUN** it's a `collection/list` of `nouns/things`.
 
-```
+
+```js
  let numbers, courses, items, movies, candies, products, animals
 ```
+
+- May end with the suffix `list` or `collection`
 
 ### Access item in Array
 
@@ -103,6 +112,23 @@ for (let loop = 1; loop < 8; loop++) {
 ```
 
 ## VS Code Shortcuts
+
+### Copy
+- `Ctrl+C` on Windows
+- `CMD+C` on MacOS
+
+>OR
+
+### Cut (Copies to clipboard and removes)
+- `Ctrl+X` on Windows
+- `CMD+X` on MacOS
+
+> THEN
+
+### Paste
+- `Ctrl+V` on Windows
+- `CMD+V` on MacOS
+
 
 ### Commenting
 
