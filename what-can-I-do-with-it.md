@@ -1,6 +1,6 @@
 # What Can I Do With It
 
-### Array
+## Array
 
 ```js
 let students = [
@@ -22,7 +22,7 @@ let students = [
 ];
 ```
 
-##
+## To Do
 
 - Sort (sort)
 - Loop (for, for of, forEach)
@@ -35,3 +35,20 @@ let students = [
 - Remove an item from an array
 - Return it from a function
 - Pass an array to a function
+- output (log)
+
+## Object
+
+```js
+ {
+    first: "Gabriel",
+    age: 22,
+    birthDate: new Date(),
+  }
+```
+
+## To Do
+
+- Get Characteristic- Access a Property (dot notation)
+- output (log)
+
