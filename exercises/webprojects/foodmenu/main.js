@@ -1,5 +1,5 @@
 "use strict";
-let categories = ["drinks","entrees", "desserts"]
+// let categories = ["drinks","entrees", "desserts"]
 
 let menu = {
   drinks: ["Water", "Tea", "Sweet Tea", "Coke", "Dr. Pepper", "Sprite"],
@@ -13,6 +13,10 @@ let menu = {
   ],
   desserts: ["Cheesecake", "Chocolate Cake", "Snickerdoodle Cookie"],
 };
+
+for (const categoryName in menu) {
+  console.log(categoryName);
+}
 
 const categoryList = document.getElementById("categoryList");
 const itemList = document.getElementById("itemList");
